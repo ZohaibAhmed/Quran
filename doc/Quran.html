@@ -1,0 +1,977 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Quran
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!Quran.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (Q)</a> &raquo;
+    
+    
+    <span class="title">Quran</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Quran
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Quran</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/quran.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Main Quran class that allows querying.</p>
+
+<pre class="ruby"><span class="ruby-ivar">@todo</span><span class="ruby-operator">:</span> <span class="ruby-constant">I</span> <span class="ruby-identifier">eventually</span> <span class="ruby-identifier">want</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">a</span> <span class="ruby-constant">Translator</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">can</span>
+<span class="ruby-identifier">abstract</span> <span class="ruby-identifier">different</span> <span class="ruby-identifier">translations</span> <span class="ruby-identifier">once</span> <span class="ruby-identifier">we</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">find</span> <span class="ruby-identifier">them</span>. <span class="ruby-constant">That</span>
+<span class="ruby-identifier">way</span>, <span class="ruby-identifier">a</span> <span class="ruby-identifier">user</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">query</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">retrive</span> <span class="ruby-identifier">different</span> <span class="ruby-identifier">translations</span> <span class="ruby-keyword">and</span>
+<span class="ruby-identifier">tafsirs</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">verse</span>.
+</pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Author:</p>
+<ul class="author">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Zohaib Ahmed</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get-instance_method" title="#get (instance method)">- (Object) <strong>get</strong>(chapter, verse, lang = @default_lang) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initialize the Quran with the language(s) specified.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_chapter-instance_method" title="#get_chapter (instance method)">- (Array) <strong>get_chapter</strong>(chapter, lang = @default_lang) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the contents of the entire chapter.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Quran) <strong>initialize</strong>(langs = [&#39;ar&#39;]) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Initialize the Quran with the language(s) specified.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#juz-instance_method" title="#juz (instance method)">- (Hash) <strong>juz</strong>(juz_number) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the details for a particular Juz.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search-instance_method" title="#search (instance method)">- (Array) <strong>search</strong>(term, lang = @default_lang) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return a list of hashes containing the verses that the search term appears
+in.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Quran (class)">Quran</a></span></tt>) <strong>initialize</strong>(langs = [&#39;ar&#39;]) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initialize the Quran with the language(s) specified.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_quran'>quran</span> <span class='op'>=</span> <span class='const'>Quran</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>en</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ar</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>langs</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Array.html" title="Array (class)">Array</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>[&#39;ar&#39;]</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/quran.rb', line 19</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_langs'>langs</span><span class='op'>=</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ar</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_db'>db</span> <span class='op'>=</span> <span class='const'>SQLite3</span><span class='op'>::</span><span class='const'>Database</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>lib/qurandb</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_db'>db</span><span class='period'>.</span><span class='id identifier rubyid_results_as_hash'>results_as_hash</span> <span class='op'>=</span> <span class='kw'>true</span>
+
+  <span class='ivar'>@chapters</span> <span class='op'>=</span> <span class='id identifier rubyid_construct_dict'>construct_dict</span><span class='lparen'>(</span><span class='id identifier rubyid_db'>db</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>chapters</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>id</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='ivar'>@languages</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='ivar'>@default_lang</span> <span class='op'>=</span> <span class='id identifier rubyid_langs'>langs</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_possible_langs'>possible_langs</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>en</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ar</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>hi</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>uz</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ur</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_langs'>langs</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_lang'>lang</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_possible_langs'>possible_langs</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_lang'>lang</span>
+      <span class='ivar'>@languages</span><span class='lbracket'>[</span><span class='id identifier rubyid_lang'>lang</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_construct_dict'>construct_dict</span><span class='lparen'>(</span><span class='id identifier rubyid_db'>db</span><span class='comma'>,</span> <span class='id identifier rubyid_lang'>lang</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>chapter</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>The language you asked for isn&#39;t supported yet.</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@juz</span> <span class='op'>=</span> <span class='lbracket'>[</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Alif-Lam-Mim</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>2</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>141</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Sayaqūl</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>2</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>142</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>2</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>252</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Tilka -r-rusul</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>2</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>253</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>3</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>92</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Lan Tana Lu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>3</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>93</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>4</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>23</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>W-al-muḥṣanāt</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>4</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>24</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>4</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>147</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Lā yuẖibbu-llāh</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>4</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>148</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>5</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>81</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa ʾidha samiʿū</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>5</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>82</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>6</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>110</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa law ʾannanā</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>6</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>111</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>7</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>87</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Qāl al-malāʾ</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>7</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>88</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>8</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>40</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>W-aʿlamū</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>8</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>41</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>9</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>92</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Yaʾtadhirūna</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>9</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>93</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>11</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>5</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa mā min dābbah</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>11</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>6</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>12</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>52</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa mā ʾubarriʾu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>12</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>53</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>14</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>52</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ʾAlif Lām Rāʾ</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>15</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>16</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>128</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Subḥāna -lladhi</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>17</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>18</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>74</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Qāla ʾa-lam</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>18</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>75</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>20</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>135</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Aqtaraba li-n-nās</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>21</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>22</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>78</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Qad ʾaflaḥa</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>23</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>25</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>20</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa-qāla -lladhīna</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>25</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>21</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>27</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>55</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Am-man khalaq</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>27</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>56</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>29</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>45</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Utlu ma uhiya</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>29</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>46</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>33</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>30</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa-man yaqnut</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>33</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>31</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>36</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>27</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Wa-mā-liya</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>36</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>28</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>39</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>31</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Fa-man ʾaẓlamu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>39</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>21</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>41</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>46</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ʾIlaihi yuraddu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>41</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>47</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>45</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>37</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Ḥāʾ Mīm</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>46</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>51</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>30</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Qāla fa-mā khatbukum</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>51</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>31</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>57</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>29</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Qad samiʿa -llāhu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>58</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>66</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>12</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Tabāraka -lladhi</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>67</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>77</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>50</span><span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='lbrace'>{</span><span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Fa-man ʾaẓlamu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:start_chapter</span> <span class='op'>=&gt;</span> <span class='int'>78</span><span class='comma'>,</span> <span class='symbol'>:start_verse</span> <span class='op'>=&gt;</span> <span class='int'>1</span><span class='comma'>,</span> <span class='symbol'>:end_chapter</span> <span class='op'>=&gt;</span> <span class='int'>114</span><span class='comma'>,</span> <span class='symbol'>:end_verse</span> <span class='op'>=&gt;</span> <span class='int'>6</span><span class='rbrace'>}</span>
+  <span class='rbracket'>]</span>
+
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="get-instance_method">
+  
+    - (<tt>Object</tt>) <strong>get</strong>(chapter, verse, lang = @default_lang) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Initialize the Quran with the language(s) specified.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_quran'>quran</span> <span class='op'>=</span> <span class='const'>Quran</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>en</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>ar</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>chapter</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/quran.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_chapter'>chapter</span><span class='comma'>,</span> <span class='id identifier rubyid_verse'>verse</span><span class='comma'>,</span> <span class='id identifier rubyid_lang'>lang</span><span class='op'>=</span><span class='ivar'>@default_lang</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_verse'>verse</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Verse does not exist.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_verse'>verse</span> <span class='op'>&lt;</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Verse does not exist.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_verses'>verses</span> <span class='op'>=</span> <span class='ivar'>@languages</span><span class='lbracket'>[</span><span class='id identifier rubyid_lang'>lang</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_chapter'>chapter</span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_verses'>verses</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Chapter does not exist</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_row'>row</span> <span class='op'>=</span> <span class='id identifier rubyid_verses'>verses</span><span class='lbracket'>[</span><span class='id identifier rubyid_verse'>verse</span> <span class='op'>-</span> <span class='int'>1</span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_row'>row</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Verse does not exist.</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_row'>row</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_chapter-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Array.html" title="Array (class)">Array</a></span></tt>) <strong>get_chapter</strong>(chapter, lang = @default_lang) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the contents of the entire chapter.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>chapter</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the chapter number</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>lang</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>@default_lang</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the language for the content</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Array.html" title="Array (class)">Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of hashes containing verses in the chapter</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+109
+110
+111</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/quran.rb', line 109</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_chapter'>get_chapter</span><span class='lparen'>(</span><span class='id identifier rubyid_chapter'>chapter</span><span class='comma'>,</span> <span class='id identifier rubyid_lang'>lang</span><span class='op'>=</span><span class='ivar'>@default_lang</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@languages</span><span class='lbracket'>[</span><span class='id identifier rubyid_lang'>lang</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='id identifier rubyid_chapter'>chapter</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="juz-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>juz</strong>(juz_number) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the details for a particular Juz</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>juz_number</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the juz number</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>details of the Juz</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/quran.rb', line 119</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_juz'>juz</span><span class='lparen'>(</span><span class='id identifier rubyid_juz_number'>juz_number</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@juz</span><span class='lbracket'>[</span><span class='id identifier rubyid_juz_number'>juz_number</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="search-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Array.html" title="Array (class)">Array</a></span></tt>) <strong>search</strong>(term, lang = @default_lang) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>Add support for other languages here.</p>
+</div>
+  </div>
+
+  <div class="note todo">
+    <strong>TODO:</strong>
+    <div class='inline'>
+<p>Find a way to do more of a fuzzy search of a phrase as a term For example,
+the verse:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Allah does not impose upon any soul a duty but to the extent of its ability</span><span class='tstring_end'>&quot;</span></span></code></pre>
+
+<p>should be returned if the term was “impose any soul”</p>
+</div>
+  </div>
+
+
+<p>Return a list of hashes containing the verses that the search term appears
+in.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>term</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the search term</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>lang</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>@default_lang</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the language for the content</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Array.html" title="Array (class)">Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Search results</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>0.0.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/quran.rb', line 137</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='id identifier rubyid_term'>term</span><span class='comma'>,</span> <span class='id identifier rubyid_lang'>lang</span><span class='op'>=</span><span class='ivar'>@default_lang</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ret'>ret</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='lparen'>(</span><span class='int'>1</span><span class='op'>..</span><span class='int'>114</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_chapter'>chapter</span><span class='op'>|</span>
+    <span class='id identifier rubyid_verses'>verses</span> <span class='op'>=</span> <span class='id identifier rubyid_get_chapter'>get_chapter</span><span class='lparen'>(</span><span class='id identifier rubyid_chapter'>chapter</span><span class='comma'>,</span> <span class='id identifier rubyid_lang'>lang</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_verses'>verses</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_v'>v</span><span class='lbracket'>[</span><span class='id identifier rubyid_lang'>lang</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_term'>term</span>
+        <span class='id identifier rubyid_ret'>ret</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_v'>v</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_ret'>ret</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sat Feb 20 17:06:18 2016 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

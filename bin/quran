@@ -1,0 +1,87 @@
+#!/usr/bin/env ruby
+require 'optparse'
+require 'json'
+require 'quran'
+
+quran = Quran.new ['en']
+
+options = {:find => nil, :juz => nil, :search => nil}
+
+first_argument = ARGV[0]
+possible_commands = ['find', 'juz', 'search']
+
+def get_chapter_and_verse(val)
+	chapter, verse = val.split(":")
+	ret = []
+
+	if not chapter.nil?
+		ret << chapter.to_i
+	end
+
+	if not verse.nil? and not chapter.empty?
+		ret << verse.to_i
+	end
+
+	ret
+end
+
+def get_or_find_arg(options, option)
+	val = options[option]
+	if options[option].nil?
+		second_arg = ARGV[1]
+		if not second_arg.nil?
+			val = second_arg
+		end
+	end
+
+	val
+end
+
+parser = OptionParser.new do|opts|
+	opts.banner = "Usage: quran [command=['find', 'juz', 'search']] [options]"
+
+	opts.on('-f', '--find chapter_number:verse_number', 'Find {ChapterNumber}:{VerseNumber}') do |find|
+		options[:find] = find;
+	end
+
+	opts.on('-j', '--juz number', 'Juz Number') do |juz|
+		options[:juz] = juz;
+	end
+
+	opts.on('-s', '--search term', 'Search term or phrase') do |search|
+		options[:search] = search;
+	end
+
+	opts.on('-h', '--help', 'Displays Help') do
+		puts opts
+		exit
+	end
+
+	if first_argument.nil? or not possible_commands.include? first_argument
+		puts opts
+		exit
+	end
+end
+parser.parse!
+
+output = {}
+# Check what first arg is. Depending on that call the appropriate method.
+if first_argument == 'find'
+	val = get_or_find_arg(options, 'find')
+	chapter, verse = get_chapter_and_verse(val)
+
+	if chapter and verse
+		output = quran.get(chapter, verse)
+	elsif chapter
+		output = quran.get_chapter(chapter)
+	end
+		
+elsif first_argument == 'juz'
+	val = get_or_find_arg(options, 'juz')
+	output = quran.juz(val.to_i)
+elsif first_argument == 'search'
+	val = get_or_find_arg(options, 'search')
+	output = quran.search(val)
+end
+
+puts JSON.pretty_generate(output)
