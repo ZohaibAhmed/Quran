@@ -10,6 +10,13 @@ gem install quran
 
 ## Usage
 
+Supported Languages:
+
+* English: 'en'
+* Arabic: 'ar'
+* Hindi: 'hi'
+* Urdu: 'ur'
+
 ```ruby
 require 'quran'
 q = Quran.new ['en', 'ar']
